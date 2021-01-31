@@ -1,20 +1,20 @@
 # NELA-GT-2020
 
-This repository contain examples of how to use the NELA-GT-2020 data set with Python 3.
+This repository contains usage examples for the NELA-GT-2020 data set with Python 3.
 
-__Download the dataset here__: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/O7FWPO
+__Download the dataset here__:
 
 __For more details about this dataset, check the paper__:
-https://arxiv.org/abs/2003.08444
+
 
 If you use this dataset in your work, please cite us as follows: <br>
 ```
 @misc{
-    gruppi2020nelagt2019,
-    title={NELA-GT-2019: A Large Multi-Labelled News Dataset for The Study of Misinformation in News Articles},
+    gruppi2020nelagt2020,
+    title={NELA-GT-2020: A Large Multi-Labelled News Dataset for The Study of Misinformation in News Articles},
     author={Maurício Gruppi and Benjamin D. Horne and Sibel Adalı},
-    year={2020},
-    eprint={2003.08444},
+    year={2021},
+    eprint={---},
     archivePrefix={arXiv},
     primaryClass={cs.CY}
 }
