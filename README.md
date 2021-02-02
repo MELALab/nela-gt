@@ -27,6 +27,8 @@ Dataset name|`NELA-GT-2020`
 Formats|`Sqlite3`,`JSON`
 No. of articles|`1731634`
 No. of sources|`519`
+No. of embedded tweets|`410432`
+No. unique tweets|`282715`
 Collection period|`2020-01-01` to `2021-01-01`
 
 ### Tables
