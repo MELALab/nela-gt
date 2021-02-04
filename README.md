@@ -21,15 +21,21 @@ If you use this dataset in your work, please cite us as follows: <br>
 ```
 ## Data
 
-Metadata||
----|---
-Dataset name|`NELA-GT-2020`
-Formats|`Sqlite3`,`JSON`
-No. of articles|`1779127`
-No. of sources|`519`
-No. of embedded tweets|`410784`
-No. unique tweets|`283018`
-Collection period|`2020-01-01` to `2020-12-31`
+We release our main news dataset `NELA-GT-2020` along with two subsets,
+created by doing keyword searches on the main dataset. We introduce
+the `NELA-GT-ELECTIONS` dataset, containing articles related to the 
+2020 U.S. Presidential Elections, and the `NELA-GT-COVID19` subset,
+which contains articles related to the COVID-19 pandemic.
+
+Metadata||||
+---|---|---|---
+Dataset name|`NELA-GT-2020` | `NELA-GT-ELECTIONS` | `NELA-GT-COVID19`
+Formats|`Sqlite3`,`JSON` | `Sqlite3`, `JSON` | `Sqlite3`, `JSON`
+No. of articles|`1779127` | `294504` | `699803`
+No. of sources|`519` | `403` | `493`
+No. of embedded tweets|`410784` | `107771` | `158855`
+Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31`
+
 
 ### Tables
 
@@ -75,6 +81,10 @@ __Note__: the labels used in this aggregation were collected from Media Bias/Fac
 
 
 ## Examples
+
+Please refer to these examples for details on how to use our dataset 
+using Python3 and Pandas.
+
 ###  load-sqlite3.py
 
 * How to load the data from the Sqlite3 database using SQL queries.
