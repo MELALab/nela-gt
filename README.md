@@ -2,9 +2,9 @@
 
 This repository contains usage examples for the NELA-GT-2020 data set with Python 3.
 
-__Download the dataset here__:
+__Download the dataset here__: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CHMUYZ
 
-__For more details about this dataset, check the paper__:
+__For more details about this dataset, check the paper__: https://arxiv.org/pdf/2102.04567.pdf
 
 
 If you use this dataset in your work, please cite us as follows: <br>
