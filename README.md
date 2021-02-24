@@ -45,8 +45,8 @@ used for their originally intended purpose, i.e., that of being
 read by individuals to consume journalistic information. 
 
 We modify the text so that it cannot properly be used for news
-consumption but that can still be used for text analysis by 
-a transformation similar to that of [corpusdata.org](https://www.corpusdata.org/limitations.asp).
+consumption but that can still be used for text analysis via
+ a [transformation](https://www.corpusdata.org/limitations.asp).
 
 For articles with more than 200 tokens, we replace 7 tokens with `@` 
 every 100 tokens. For articles with fewer than 200 tokens, we replace 5 
