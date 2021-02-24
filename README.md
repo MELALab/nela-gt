@@ -37,6 +37,25 @@ No. of embedded tweets|`410784` | `107771` | `158855`
 Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31`
 
 
+### Limitations
+
+Since the articles collected from news sources may be copyrighted, 
+we apply a transformation to the original text so that it cannot be 
+used for their originally intended purpose, i.e., that of being
+read by individuals to consume journalistic information. 
+
+We modify the text so that it cannot properly be used for news
+consumption but that can still be used for text analysis by 
+a transformation similar to that of [corpusdata.org](https://www.corpusdata.org/limitations.asp).
+
+For articles with more than 200 tokens, we replace 7 tokens with `@` 
+every 100 tokens. For articles with fewer than 200 tokens, we replace 5 
+consecutive tokens with `@` every 20 tokens.
+This transforms the articles so that it is unlikely that a user will
+read NELA-GT to consume news while still keeping most of the content
+that is useful for analysis (~7% for larger articles).
+
+
 ### Tables
 
 #### Table: Newsdata
@@ -65,7 +84,7 @@ Each entry corresponds to an embedded tweet observed in the article with id `art
 ---|---|---
 `id` | string | ID of the embedded tweet.
 `article_id` | string | ID of the article that contains the embedded tweet.
-`embedded_tweet` | string | Raw HTML of the embedded tweet.
+`embedded_tweet` | string | ID/URL of the embedded tweet.
 
 ### Aggregated labels
 
