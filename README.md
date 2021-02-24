@@ -2,11 +2,8 @@
 
 This repository contains usage examples for the NELA-GT-2020 data set with Python 3.
 
-__Download the dataset here__: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/CHMUYZ
 
-__For more details about this dataset, check the paper__: https://arxiv.org/pdf/2102.04567.pdf
-
-
+## Citation
 If you use this dataset in your work, please cite us as follows: <br>
 ```
 @misc{
@@ -35,6 +32,21 @@ No. of articles|`1779127` | `294504` | `699803`
 No. of sources|`519` | `403` | `493`
 No. of embedded tweets|`410784` | `107771` | `158855`
 Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31`
+
+
+### Download
+
+- __Full dataset__ 
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417500&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417502&version=2.0)
+- __COVID-19 subset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417498&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417503&version=2.0)
+- __U.S. elections subset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417499&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417504&version=2.0)
+
+For more details about this dataset, check the [paper](https://arxiv.org/pdf/2102.04567.pdf). 
 
 
 ### Limitations
