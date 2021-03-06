@@ -36,17 +36,21 @@ Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | 
 
 ### Download
 
-- __Full dataset__ 
+- __News Data__
+  - __Full dataset__ 
   [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417500&version=2.0)
   | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417502&version=2.0)
-- __COVID-19 subset__
+  - __COVID-19 subset__
   [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417498&version=2.0)
   | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417503&version=2.0)
-- __U.S. elections subset__
+  - __U.S. elections subset__
   [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417499&version=2.0)
   | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417504&version=2.0)
 
-For more details about this dataset, check the [paper](https://arxiv.org/pdf/2102.04567.pdf). 
+- __Source Labels__: [CSV](https://dataverse.harvard.edu/file.xhtml?fileId=4366864&version=2.0)
+  - This file contains the credibility label for news sources in the dataset (reliable, unreliable, mixed).
+
+For more details about this dataset, see the [paper](https://arxiv.org/pdf/2102.04567.pdf). 
 
 
 ### Limitations
