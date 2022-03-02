@@ -107,8 +107,9 @@ Each entry corresponds to an embedded tweet observed in the article with id `art
 We provide aggregated labels based on Media Bias/Fact Check reports, classifying each source as:
 
 * _Reliable_ - class 0
-* _Mixed_ - class 1
-* _Unreliable_ - class 2
+* _Unreliable_ - class 1
+* _Mixed_ - class 2
+
 
 These labels can be found in `labels.csv`
 
