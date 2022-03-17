@@ -1,14 +1,12 @@
-# NELA-GT-2020
-
+# NELA-GT repository
 This repository contains usage examples for the NELA-GT-2020 data set with Python 3.
 
-
-## Citation
+# (NEW) NELA-GT-2021
 If you use this dataset in your work, please cite us as follows: <br>
 ```
 @misc{
-    gruppi2020nelagt2020,
-    title={NELA-GT-2020: A Large Multi-Labelled News Dataset for The Study of Misinformation in News Articles},
+    gruppi2020nelagt2021,
+    title={NELA-GT-2021: A Large Multi-Labelled News Dataset for The Study of Misinformation in News Articles},
     author={Maurício Gruppi and Benjamin D. Horne and Sibel Adalı},
     year={2021},
     eprint={---},
@@ -16,56 +14,39 @@ If you use this dataset in your work, please cite us as follows: <br>
     primaryClass={cs.CY}
 }
 ```
+
 ## Data
-
-We release our main news dataset `NELA-GT-2020` along with two subsets,
-created by doing keyword searches on the main dataset. We introduce
-the `NELA-GT-ELECTIONS` dataset, containing articles related to the 
-2020 U.S. Presidential Elections, and the `NELA-GT-COVID19` subset,
-which contains articles related to the COVID-19 pandemic.
-
-Metadata||||
----|---|---|---
-Dataset name|`NELA-GT-2020` | `NELA-GT-ELECTIONS` | `NELA-GT-COVID19`
-Formats|`Sqlite3`,`JSON` | `Sqlite3`, `JSON` | `Sqlite3`, `JSON`
-No. of articles|`1779127` | `294504` | `699803`
-No. of sources|`519` | `403` | `493`
-No. of embedded tweets|`410784` | `107771` | `158855`
-Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31`
-
+Metadata||
+---|---
+Dataset name|`nela-gt-2021`
+Formats|`Sqlite3`,`JSON`
+No. of articles|`1856509`
+No. of sources|`367`
+No. of embedded tweets|`405449`
+No. of articles w/ tweets|`153663`
+Collection period|`2021-01-01` to `2021-12-31`
 
 ### Download
 
 - __News Data__
-  - __Full dataset__ 
-  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417500&version=2.0)
-  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417502&version=2.0)
-  - __COVID-19 subset__
-  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417498&version=2.0)
-  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417503&version=2.0)
-  - __U.S. elections subset__
-  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417499&version=2.0)
-  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417504&version=2.0)
-
-- __Source Labels__: [CSV](https://dataverse.harvard.edu/file.xhtml?fileId=4366864&version=2.0)
-  - This file contains the credibility label for news sources in the dataset (reliable, unreliable, mixed).
-
-For more details about this dataset, see the [paper](https://arxiv.org/pdf/2102.04567.pdf). 
+  - __Full dataset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=6078142&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=6078140&version=2.0)
 
 
 ### Limitations
 
-Since the articles collected from news sources may be copyrighted, 
-we apply a transformation to the original text so that it cannot be 
+Since the articles collected from news sources may be copyrighted,
+we apply a transformation to the original text so that it cannot be
 used for their originally intended purpose, i.e., that of being
-read by individuals to consume journalistic information. 
+read by individuals to consume journalistic information.
 
 We modify the text so that it cannot properly be used for news
 consumption but that can still be used for text analysis via
  a [transformation](https://www.corpusdata.org/limitations.asp).
 
-For articles with more than 200 tokens, we replace 7 tokens with `@` 
-every 100 tokens. For articles with fewer than 200 tokens, we replace 5 
+For articles with more than 200 tokens, we replace 7 tokens with `@`
+every 100 tokens. For articles with fewer than 200 tokens, we replace 5
 consecutive tokens with `@` every 20 tokens.
 This transforms the articles so that it is unlikely that a user will
 read NELA-GT to consume news while still keeping most of the content
@@ -118,7 +99,7 @@ __Note__: the labels used in this aggregation were collected from Media Bias/Fac
 
 ## Examples
 
-Please refer to these examples for details on how to use our dataset 
+Please refer to these examples for details on how to use our dataset
 using Python3 and Pandas.
 
 ###  load-sqlite3.py
@@ -142,3 +123,53 @@ Usage:
 ```
 python3 load-json.py <path-to-file>
 ```
+
+# About NELA-GT-2020
+## Citation
+If you use this dataset in your work, please cite us as follows: <br>
+```
+@misc{
+    gruppi2020nelagt2020,
+    title={NELA-GT-2020: A Large Multi-Labelled News Dataset for The Study of Misinformation in News Articles},
+    author={Maurício Gruppi and Benjamin D. Horne and Sibel Adalı},
+    year={2021},
+    eprint={---},
+    archivePrefix={arXiv},
+    primaryClass={cs.CY}
+}
+```
+## Data
+
+We release our main news dataset `NELA-GT-2020` along with two subsets,
+created by doing keyword searches on the main dataset. We introduce
+the `NELA-GT-ELECTIONS` dataset, containing articles related to the
+2020 U.S. Presidential Elections, and the `NELA-GT-COVID19` subset,
+which contains articles related to the COVID-19 pandemic.
+
+Metadata||||
+---|---|---|---
+Dataset name|`NELA-GT-2020` | `NELA-GT-ELECTIONS` | `NELA-GT-COVID19`
+Formats|`Sqlite3`,`JSON` | `Sqlite3`, `JSON` | `Sqlite3`, `JSON`
+No. of articles|`1779127` | `294504` | `699803`
+No. of sources|`519` | `403` | `493`
+No. of embedded tweets|`410784` | `107771` | `158855`
+Collection period|`2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31` | `2020-01-01` to `2020-12-31`
+
+
+### Download
+
+- __News Data__
+  - __Full dataset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417500&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417502&version=2.0)
+  - __COVID-19 subset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417498&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417503&version=2.0)
+  - __U.S. elections subset__
+  [Sqlite3](https://dataverse.harvard.edu/file.xhtml?fileId=4417499&version=2.0)
+  | [JSON](https://dataverse.harvard.edu/file.xhtml?fileId=4417504&version=2.0)
+
+- __Source Labels__: [CSV](https://dataverse.harvard.edu/file.xhtml?fileId=4366864&version=2.0)
+  - This file contains the credibility label for news sources in the dataset (reliable, unreliable, mixed).
+
+For more details about this dataset, see the [paper](https://arxiv.org/pdf/2102.04567.pdf).
