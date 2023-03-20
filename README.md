@@ -1,7 +1,21 @@
 # NELA-GT repository
 This repository contains usage examples for the NELA-GT-2020 data set with Python 3.
 
-# (NEW) NELA-GT-2021
+
+# NELA-GT-2022
+
+Metadata||
+---|---
+Dataset name|`nela-gt-2022`
+Formats|`Sqlite3`,`JSON`
+No. of articles|`1778361`
+No. of sources|`361`
+No. of embedded tweets|`346283`
+No. of articles w/ tweets|`137150`
+Collection period|`2022-01-01` to `2022-12-31`
+
+
+# NELA-GT-2021
 If you use this dataset in your work, please cite us as follows: <br>
 ```
 @misc{
@@ -90,6 +104,7 @@ We provide aggregated labels based on Media Bias/Fact Check reports, classifying
 * _Reliable_ - class 0
 * _Unreliable_ - class 1
 * _Mixed_ - class 2
+* _Null_ - invalid label, `-1` or `null`
 
 
 These labels can be found in `labels.csv`
